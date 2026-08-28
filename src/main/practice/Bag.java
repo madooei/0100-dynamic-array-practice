@@ -2,28 +2,27 @@ package practice;
 
 import java.util.Random;
 
-/**
- * A bag of colored balls, backed by a fixed-size array that doubles its capacity
- * when it fills up. A bag is an unordered collection: you add balls and you draw
- * one out at random. Because order carries no meaning, removal does not bother to
- * shift elements over — it fills the gap with the last ball and shrinks.
- */
+/** A bag of colored balls you draw from at random. */
 public class Bag {
 
-  private BallColor[] balls;   // the underlying fixed-size storage
-  private int size;            // how many balls are in the bag right now
-  private Random rng;          // source of randomness for drawing a ball
+  private BallColor[] balls;
+  private int size;
+  private Random rng;
 
   public Bag() {
     // TODO: Implement me
     throw new UnsupportedOperationException("TODO: Implement me");
   }
 
+  // Assumes ball is not null.
   public void add(BallColor ball) {
     // TODO: Implement me
     throw new UnsupportedOperationException("TODO: Implement me");
   }
 
+  // Draws and removes a ball chosen uniformly at random; order is not
+  // preserved, so the gap is filled with the last ball instead of shifting.
+  // Throws IllegalStateException if the bag is empty.
   public BallColor remove() {
     // TODO: Implement me
     throw new UnsupportedOperationException("TODO: Implement me");
@@ -33,6 +32,7 @@ public class Bag {
     return size;
   }
 
+  // Doubles the capacity.
   private void grow() {
     // TODO: Implement me
     throw new UnsupportedOperationException("TODO: Implement me");
