@@ -2,8 +2,7 @@
 
 A growable bag of colored balls you draw from at random, built the same way as
 the chapter's `DynamicArray`: a fixed-size backing array that doubles in
-capacity when it fills up. This is the reference solution for the chapter's
-practice problem.
+capacity when it fills up.
 
 ## Prerequisites
 
