@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
-# Compile all source into out/ and run the Bag urn practice demo.
+# Compile all source into out/ and run one practice demo, e.g.:
+#   scripts/run.sh practice.BagDemo
 set -e
 cd "$(dirname "$0")/.."
+if [ $# -ne 1 ]; then
+  echo "usage: scripts/run.sh <demo class>, e.g. scripts/run.sh practice.BagDemo" >&2
+  exit 1
+fi
 javac -d out $(find src/main -name "*.java")
-java -cp out practice.PracticeMain
+java -cp out "$1"

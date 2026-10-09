@@ -1,10 +1,10 @@
 package practice;
 
 /** Treats the bag as an urn and draws from it many times to watch a probability take shape. */
-public final class PracticeMain {
+public final class BagDemo {
 
-  private PracticeMain() {
-    // Entry-point holder — not instantiated.
+  private BagDemo() {
+    // This class should not be instantiated!
   }
 
   public static void main(String[] args) {

@@ -15,16 +15,16 @@ code/
   src/
     main/
       practice/
-        BallColor.java      # the two ball colors, as an enum
-        Bag.java             # a growable bag you draw from at random
-        PracticeMain.java    # the urn probability demo
+        BallColor.java # the two ball colors, as an enum
+        Bag.java       # a growable bag you draw from at random
+        BagDemo.java   # the urn probability demo
   scripts/
-    run.sh                   # compile everything and run the Bag urn demo
+    run.sh             # compile everything and run the Bag urn demo
 ```
 
 ## How to compile and run
 
-- `scripts/run.sh` — compiles all source into `out/` and runs the urn probability demo (`practice.PracticeMain`).
+- `scripts/run.sh practice.BagDemo` — compiles everything and runs the `BagDemo` demo.
 
 There is no build tool and no test suite: testing is introduced later in the course. The script above is all you need.
 
@@ -32,4 +32,4 @@ There is no build tool and no test suite: testing is introduced later in the cou
 
 - `practice.Bag` — a growable bag of colored balls with `add`, `remove` (which draws a ball at random and hands it back), and `size`. Like `DynamicArray` it grows a fixed array, but because a bag is unordered, removal fills the gap with the last ball instead of shifting.
 - `practice.BallColor` — the element type, an enum of `BLACK` and `BLUE`.
-- `practice.PracticeMain` — fills the bag with a known mix and draws from it many times to watch the observed fraction of blue draws converge on the true proportion.
+- `practice.BagDemo` — fills the bag with a known mix and draws from it many times to watch the observed fraction of blue draws converge on the true proportion.
