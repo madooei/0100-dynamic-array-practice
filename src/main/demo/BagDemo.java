@@ -1,4 +1,7 @@
-package practice;
+package demo;
+
+import practice.Bag;
+import practice.BallColor;
 
 /** Treats the bag as an urn and draws from it many times to watch a probability take shape. */
 public final class BagDemo {
