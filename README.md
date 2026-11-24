@@ -29,7 +29,7 @@ code/
 
 There is no build tool and no test suite: testing is introduced later in the course. The script above is all you need.
 
-## What's here
+## Contents
 
 - `practice.Bag` — a growable bag of colored balls with `add`, `remove` (which draws a ball at random and hands it back), and `size`. Like `DynamicArray` it grows a fixed array, but because a bag is unordered, removal fills the gap with the last ball instead of shifting.
 - `practice.BallColor` — the element type, an enum of `BLACK` and `BLUE`.
